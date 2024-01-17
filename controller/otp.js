@@ -2,7 +2,7 @@ import { OTP } from "../models/otp.js";
 
 export const generateotp = async (req, res) => {
     function generateUnique() {
-        const character = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        const character = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
         let uniquecode = "";
 
         for (let i = 0; i < 9; i++) {
